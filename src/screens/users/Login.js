@@ -5,7 +5,7 @@ import color from '../../assets/colors/color'
 const Login = (props) => {
 
     const { navigation } = props;
-    
+
     return (
         <View style={styles.container}>
             <Text style={styles.textHello}>Hello Again!</Text>
@@ -22,12 +22,12 @@ const Login = (props) => {
 
             <Text style={styles.textForgot}>Forgot Password?</Text>
             <Pressable style={styles.buttonSignIn}
-             onPress={() => { navigation.navigate('MainNaviagtion') }}>
+                onPress={() => { navigation.navigate('MainNaviagtion') }}>
                 <Text style={styles.textSignIn}>Sign In</Text>
             </Pressable>
             <Text style={styles.textOr}>Or</Text>
             <Pressable style={styles.button} >
-                <Image style={styles.fbgg} source={require('../../assets/images/google.png')}/>
+                <Image style={styles.fbgg} source={require('../../assets/images/google.png')} />
                 <Text style={{ fontSize: 16, fontWeight: 'bold', color: 'black' }}>Sign In With Google</Text>
             </Pressable>
             <Pressable style={styles.button} >
@@ -36,8 +36,8 @@ const Login = (props) => {
             </Pressable>
             <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
                 <Text style={styles.textDont} >Dont Have An Acount?  </Text>
-                <Text style={{ color: color.primaryColor, fontWeight: 'bold' }} 
-                onPress={() => { navigation.navigate('CreateAccount') }}>Sign Up </Text>
+                <Text style={{ color: color.primaryColor, fontWeight: 'bold' }}
+                    onPress={() => { navigation.navigate('CreateAccount') }}>Sign Up </Text>
             </View>
         </View >
     )
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 56,
         borderRadius: 16,
-        borderColor:color.primaryColor,
+        borderColor: color.primaryColor,
         borderWidth: 1,
         backgroundColor: color.colorView,
         paddingLeft: 56,

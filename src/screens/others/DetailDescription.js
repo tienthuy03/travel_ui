@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Pressable } from 'react-native'
 import React from 'react'
-import color from '../../assets/colors'
+import color from '../../assets/colors/color'
 const DetailDescription = () => {
    return (
       <View style={styles.container}>

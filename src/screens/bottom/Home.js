@@ -8,36 +8,18 @@ import { useDispatch, useSelector } from 'react-redux'
 
 //render Item list city
 const Item = ({ item, onPress, backgroundColor, textColor }) => (
-
   <TouchableOpacity
-  onPress={onPress} style={[styles.list, { backgroundColor }]}>
-  <View style={styles.item}>
-  <Text style={[styles.textItem, { color: textColor }]}>{item.name}</Text>
-  </View>
-</TouchableOpacity>
+    onPress={onPress} style={[styles.list, { backgroundColor }]}>
+    <View style={styles.item}>
+      <Text style={[styles.textItem, { color: textColor }]}>{item.name}</Text>
+    </View>
+  </TouchableOpacity>
 );
-const Home = () => {
-  // RENDER ITEM CATEGORIES
-  // const [color, setColor] = useState('');
-  // const handleClick = () => {
-  //   setColor(!color);
-  // };
+const Home = (props) => {
 
-  // const renderItemList = (props) => {
-  //   const { item } = props;
-  //   const { name } = item;
-  //   return (
-  //     <TouchableOpacity
-  //       activeOpacity={0.5}
-  //       onPress={handleClick}
-  //       style={[styles.list, { backgroundColor: color ? '#ffffff' : '#5CCAD3' }]}>
-  //       <View style={styles.item}>
-  //         <Text style={[styles.textItem, { color: color ? '#5CCAD3' : '#ffffff' }]}>{name}</Text>
-  //       </View>
-  //     </TouchableOpacity>
-  //   )
-  // };
   const [selectedId, setSelectedId] = useState();
+
+  const { navigation } = props;
 
   const renderItem = ({ item }) => {
     const backgroundColor = item.id === selectedId ? '#5CCAD3' : '#ffffff';

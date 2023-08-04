@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, Image, Dimensions, ScrollView, Pressable, SafeAreaView } from 'react-native'
 import TabLayout from 'react-native-simple-tablayout';
 import React from 'react'
-import color from '../../../../contains/color'
+import color from '../../assets/colors/color'
 import DetailDescription from '../../orthers/screens/DetailDescription';
 import DetailReview from '../../orthers/screens/DetailReview';
 const { width } = Dimensions.get('screen');
@@ -36,7 +36,7 @@ const Detail = () => {
          <View style={styles.header}>
             <View style={styles.image}>
                < Image style={styles.imgBack}
-                  source={require('../../../../../../assets/images/left.png')} />
+                  source={require('../../assets/images/left.png')} />
             </View>
             <Text style={styles.title}>Destination Details</Text>
          </View>
@@ -50,15 +50,15 @@ const Detail = () => {
          <View style={styles.contentRating}>
             <View style={styles.rating}>
                <Image style={styles.ratingImg}
-                  source={require('../../../../../../assets/images/start.png')} />
+                  source={require('../../assets/images/start.png')} />
                <Image style={styles.ratingImg}
-                  source={require('../../../../../../assets/images/start.png')} />
+                  source={require('../../assets/images/start.png')} />
                <Image style={styles.ratingImg}
-                  source={require('../../../../../../assets/images/start.png')} />
+                  source={require('../../assets/images/start.png')} />
                <Image style={styles.ratingImg}
-                  source={require('../../../../../../assets/images/start.png')} />
+                  source={require('../../assets/images/start.png')} />
                <Image style={styles.ratingImg}
-                  source={require('../../../../../../assets/images/star.png')} />
+                  source={require('../../assets/images/start.png')} />
             </View>
             <Text style={styles.textRating}>4.5</Text>
             <Text style={styles.textReviews}>(400 Reviews)</Text>
