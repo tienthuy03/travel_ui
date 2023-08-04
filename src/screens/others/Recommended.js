@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Image, FlatList } from 'react-native'
 import React from 'react'
-import color from '../../../../contains/color'
+import color from '../../assets/colors'
 
 const Recommended = () => {
   const renderItemRecommended = (props) => {
@@ -17,7 +17,7 @@ const Recommended = () => {
           <Text style={styles.textPriceRecomb}>{price}</Text>
         </View>
         <Image style={styles.imgHeartBlue}
-          source={require('../../../../../../assets/images/heartBlue.png')} />
+          source={require('../../assets/images/heartBlue.png')} />
       </View>
 
     )
@@ -27,7 +27,7 @@ const Recommended = () => {
       <View style={styles.header}>
         <View style={styles.image}>
           < Image style={styles.imgBack}
-            source={require('../../../../../../assets/images/left.png')} />
+            source={require('../../assets/images/left.png')} />
         </View>
         <Text style={styles.title}>Recommended Destination</Text>
       </View>

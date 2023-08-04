@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Image, Pressable } from 'react-native'
 import React from 'react'
-import color from '../../../../contains/color'
+import color from '../../assets/colors'
 const DetailReview = () => {
 
    return (
@@ -14,15 +14,15 @@ const DetailReview = () => {
          <View style={styles.contentRating}>
             <View style={styles.rating}>
                <Image style={styles.ratingImg}
-                  source={require('../../../../../../assets/images/start.png')} />
+                  source={require('../../assets/images/start.png')} />
                <Image style={styles.ratingImg}
-                  source={require('../../../../../../assets/images/start.png')} />
+                  source={require('../../assets/images/start.png')} />
                <Image style={styles.ratingImg}
-                  source={require('../../../../../../assets/images/start.png')} />
+                  source={require('../../assets/images/start.png')} />
                <Image style={styles.ratingImg}
-                  source={require('../../../../../../assets/images/start.png')} />
+                  source={require('../../assets/images/start.png')} />
                <Image style={styles.ratingImg}
-                  source={require('../../../../../../assets/images/star.png')} />
+                  source={require('../../assets/images/star.png')} />
             </View>
          </View>
          <View style={styles.user}>
@@ -34,15 +34,15 @@ const DetailReview = () => {
          <View style={styles.contentRating}>
             <View style={styles.rating}>
                <Image style={styles.ratingImg}
-                  source={require('../../../../../../assets/images/start.png')} />
+                  source={require('../../assets/images/start.png')} />
                <Image style={styles.ratingImg}
-                  source={require('../../../../../../assets/images/start.png')} />
+                  source={require('../../assets/images/start.png')} />
                <Image style={styles.ratingImg}
-                  source={require('../../../../../../assets/images/start.png')} />
+                  source={require('../../assets/images/start.png')} />
                <Image style={styles.ratingImg}
-                  source={require('../../../../../../assets/images/start.png')} />
+                  source={require('../../assets/images/start.png')} />
                <Image style={styles.ratingImg}
-                  source={require('../../../../../../assets/images/star.png')} />
+                  source={require('../../assets/images/star.png')} />
             </View>
          </View>
          <Pressable style={styles.button}>

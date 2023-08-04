@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Image, TextInput, FlatList, ScrollView, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
-import color from '../../../../contains/color'
+import color from '../../assets/colors/color'
 
 const Item = ({ item, onPress, backgroundColor, textColor }) => (
   <TouchableOpacity onPress={onPress} style={[styles.list, { backgroundColor }]}>
@@ -49,7 +49,7 @@ const Search = () => {
           <Text style={styles.textPriceRecomb}>{price}</Text>
         </View>
         <Image style={styles.imgHeartBlue}
-          source={require('../../../../../../assets/images/heartBlue.png')} />
+          source={require('../../assets/images/heartBlue.png')} />
       </View>
 
     )
@@ -59,7 +59,7 @@ const Search = () => {
       <View style={styles.header}>
         <View style={styles.image}>
           < Image style={styles.imgBack}
-            source={require('../../../../../../assets/images/icBack.png')} />
+            source={require('../../assets/images/icBack.png')} />
         </View>
         <Text style={styles.title}> Search Pages</Text>
       </View>
@@ -70,10 +70,10 @@ const Search = () => {
             placeholder='Search Food..' />
           <Image
             style={styles.imgSearch}
-            source={require('../../../../../../assets/images/search.png')} />
+            source={require('../../assets/images/search.png')} />
         </View>
         <View style={styles.change}>
-          <Image style={styles.imgChanger} source={require('../../../../../../assets/images/change.png')} />
+          <Image style={styles.imgChanger} source={require('../../assets/images/change.png')} />
         </View>
       </View>
       <View style={styles.categories}>

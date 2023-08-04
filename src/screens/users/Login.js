@@ -1,42 +1,43 @@
 import { StyleSheet, Text, View, TextInput, Pressable, Image, TouchableOpacity } from 'react-native'
 import React, { useState, useContext, useEffect } from 'react'
-import color from '../../../../contains/color'
+import color from '../../assets/colors/color'
 
 const Login = (props) => {
-    const [hidePassword, setHidePassword] = useState(true);
-    const togglePasswordVisibility = () => {
-        setHidePassword(!hidePassword);
-    };
+
+    const { navigation } = props;
+    
     return (
         <View style={styles.container}>
             <Text style={styles.textHello}>Hello Again!</Text>
             <Text style={styles.textWelcome}>Welcome Back You'er been missed </Text>
             <Pressable >
                 <TextInput placeholder="Email" style={styles.inputContainer} />
-                <Image style={styles.icon} source={require('../../../../../../assets/images/email.png')} />
+                <Image style={styles.icon} source={require('../../assets/images/email.png')} />
             </Pressable>
 
             <Pressable >
                 <TextInput placeholder="Password" style={styles.inputContainer} />
-                <Image style={styles.icon} source={require('../../../../../../assets/images/password.png')} />
+                <Image style={styles.icon} source={require('../../assets/images/password.png')} />
             </Pressable>
 
             <Text style={styles.textForgot}>Forgot Password?</Text>
-            <Pressable style={styles.buttonSignIn}>
+            <Pressable style={styles.buttonSignIn}
+             onPress={() => { navigation.navigate('MainNaviagtion') }}>
                 <Text style={styles.textSignIn}>Sign In</Text>
             </Pressable>
             <Text style={styles.textOr}>Or</Text>
             <Pressable style={styles.button} >
-                <Image style={styles.fbgg} source={require('../../../../../../assets/images/google.png')} />
+                <Image style={styles.fbgg} source={require('../../assets/images/google.png')}/>
                 <Text style={{ fontSize: 16, fontWeight: 'bold', color: 'black' }}>Sign In With Google</Text>
             </Pressable>
             <Pressable style={styles.button} >
-                <Image style={styles.fbgg} source={require('../../../../../../assets/images/facebook.png')} />
+                <Image style={styles.fbgg} source={require('../../assets/images/facebook.png')} />
                 <Text style={{ fontSize: 16, fontWeight: 'bold', color: 'black' }}>Sign In With FaceBook</Text>
             </Pressable>
             <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
                 <Text style={styles.textDont} >Dont Have An Acount?  </Text>
-                <Text style={{ color: color.primaryColor, fontWeight: 'bold' }} onPress={() => { console.log('Sign Up') }}>Sign Up </Text>
+                <Text style={{ color: color.primaryColor, fontWeight: 'bold' }} 
+                onPress={() => { navigation.navigate('CreateAccount') }}>Sign Up </Text>
             </View>
         </View >
     )
@@ -51,10 +52,10 @@ const styles = StyleSheet.create({
         height: 56,
         width: '100%',
         borderColor: color.textHint,
-        borderRadius: 20,
+        borderRadius: 16,
         marginBottom: 20,
         alignItems: 'center',
-        flexDirection: 'row'
+        flexDirection: 'row',
     },
     fbgg: {
         marginRight: 50,
@@ -65,7 +66,7 @@ const styles = StyleSheet.create({
     textOr: {
         fontSize: 16,
         fontWeight: '400',
-        margin: 30,
+        marginTop: 8,
         color: color.black,
         textAlign: 'center',
     },
@@ -101,13 +102,13 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 56,
         borderRadius: 16,
-        borderColor: color.background,
+        borderColor:color.primaryColor,
         borderWidth: 1,
         backgroundColor: color.colorView,
         paddingLeft: 56,
         position: 'relative',
         fontSize: 16,
-        fontWeight: '500',
+        fontWeight: '700',
         marginBottom: 16
     },
     textWelcome: {

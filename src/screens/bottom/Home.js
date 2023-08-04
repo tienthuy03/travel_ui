@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Image, TextInput, FlatList, LogBox, TouchableOpacity, Pressable } from 'react-native'
 import React, { useEffect, useState } from 'react'
-import color from '../../../../contains/color'
+import color from '../../assets/colors/color'
 import { ScrollView } from 'react-native-virtualized-view'
 // dispacth la goi hanh dong, use selector lay thong tin tu store len view
 import { useDispatch, useSelector } from 'react-redux'
@@ -65,11 +65,11 @@ const Home = () => {
           source={{ uri: avatar }} />
         <View style={styles.cardHeader}>
           <View style={styles.rating}>
-            <Image style={styles.imgRating} source={require('../../../../../../assets/images/start.png')} />
+            <Image style={styles.imgRating} source={require('../../assets/images/start.png')} />
             <Text style={styles.textRating}>{rating}</Text>
           </View>
           <View style={styles.heart}>
-            <Image style={styles.imgHeart} source={require('../../../../../../assets/images/heart.png')} />
+            <Image style={styles.imgHeart} source={require('../../assets/images/heart.png')} />
           </View>
         </View>
         <View style={styles.description}>
@@ -78,7 +78,7 @@ const Home = () => {
           <View style={styles.content}>
             <Text style={styles.textPrice}>{price}</Text>
             <Image style={styles.imgRight}
-              source={require('../../../../../../assets/images/right.png')} />
+              source={require('../../assets/images/right.png')} />
           </View>
         </View>
       </TouchableOpacity>
@@ -102,7 +102,7 @@ const Home = () => {
           <Text style={styles.textPriceRecomb}>{price}</Text>
         </View>
         <Image style={styles.imgHeartBlue}
-          source={require('../../../../../../assets/images/heartBlue.png')} />
+          source={require('../../assets/images/heartBlue.png')} />
       </TouchableOpacity>
 
     )
@@ -119,7 +119,7 @@ const Home = () => {
             <Text style={styles.title}>Where Do You Want To Discover</Text>
             <Pressable style={styles.viewBell}>
               <Image
-                source={require('../../../../../../assets/images/bell.png')}
+                source={require('../../assets/images/bell.png')}
                 style={styles.imgBell} />
             </Pressable>
 
@@ -131,10 +131,10 @@ const Home = () => {
                 placeholder='Search Food..' />
               <Image
                 style={styles.imgSearch}
-                source={require('../../../../../../assets/images/search.png')} />
+                source={require('../../assets/images/search.png')} />
             </View>
             <View style={styles.change}>
-              <Image style={styles.imgChanger} source={require('../../../../../../assets/images/change.png')} />
+              <Image style={styles.imgChanger} source={require('../../assets/images/change.png')} />
             </View>
           </View>
           <View style={styles.categories}>
@@ -235,7 +235,7 @@ const styles = StyleSheet.create({
   },
   textPrice: {
     fontSize: 14,
-    fontWeight: '500',
+    fontWeight: '700',
     lineHeight: 23.8,
     color: color.white,
   },
@@ -248,7 +248,7 @@ const styles = StyleSheet.create({
   },
   textTitle: {
     fontSize: 12,
-    fontWeight: '500',
+    fontWeight: '700',
     lineHeight: 20.4,
     color: color.white,
     paddingLeft: 32,
@@ -256,7 +256,7 @@ const styles = StyleSheet.create({
   },
   textName: {
     fontSize: 16,
-    fontWeight: '500',
+    fontWeight: '700',
     lineHeight: 27.2,
     color: color.white,
     paddingLeft: 32,
@@ -266,7 +266,7 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     fontSize: 14,
     lineHeight: 23.8,
-    color: color.white,
+    color: color.black,
     paddingLeft: 4
   },
   description: {
@@ -275,7 +275,7 @@ const styles = StyleSheet.create({
     backgroundColor: color.colorView,
     borderWidth: 1,
     borderRadius: 50,
-    borderColor: color.colorView,
+    borderColor: color.white,
     position: 'absolute',
     bottom: 15,
     left: 17,
@@ -283,8 +283,8 @@ const styles = StyleSheet.create({
   heart: {
     width: 46,
     height: 46,
-    borderColor: color.colorView,
     borderWidth: 1,
+    borderColor: color.white,
     borderRadius: 50,
     backgroundColor: color.colorView,
     alignItems: 'center',
@@ -294,10 +294,9 @@ const styles = StyleSheet.create({
   rating: {
     width: 100,
     height: 46,
-    backgroundColor: color.colorView,
-    borderWidth: 1,
     borderRadius: 50,
-    borderColor: color.colorView,
+    borderWidth: 1,
+    borderColor: color.white,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',

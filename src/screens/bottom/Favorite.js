@@ -58,7 +58,7 @@
 // })
 import { StyleSheet, Text, View, Image, TextInput, Pressable, FlatList } from 'react-native'
 import React from 'react'
-import color from '../../../../contains/color'
+import color from '../../assets/colors/color'
 
 const Favorite = () => {
   const renderItemList = (props) => {
@@ -84,7 +84,7 @@ const Favorite = () => {
           <Text style={styles.textPriceRecomb}>{price}</Text>
         </View>
         <Image style={styles.imgHeartBlue}
-          source={require('../../../../../../assets/images/heartBlue.png')} />
+          source={require('../../assets/images/heartBlue.png')} />
       </View>
 
     )
@@ -94,7 +94,7 @@ const Favorite = () => {
       <View style={styles.header}>
         <Pressable style={styles.viewBack}>
           <Image style={styles.icBack}
-            source={require('../../../../../../assets/images/icBack.png')} />
+            source={require('../../assets/images/icBack.png')} />
         </Pressable>
         <Text style={styles.textFavorite}>Favorite</Text>
       </View>

@@ -32,14 +32,14 @@
 // })
 import { StyleSheet, Text, View, Image, Pressable } from 'react-native'
 import React from 'react'
-import color from '../../../../contains/color'
+import color from '../../assets/colors/color'
 
 const Profile = () => {
   return (
     <View style={styles.container}>
       <View style={styles.avatar}>
         <Image style={styles.imgAvatar}
-          source={require('../../../../../../assets/images/icCam.png')} />
+          source={require('../../assets/images/icCam.png')} />
       </View>
       <View style={styles.information}>
         <Text style={styles.textName}>Travel Now</Text>
@@ -49,66 +49,66 @@ const Profile = () => {
         <View style={styles.booking}>
           <Text style={styles.textBooking}>Profile</Text>
           <Image style={styles.imgRight}
-            source={require('../../../../../../assets/images/right.png')} />
+            source={require('../../assets/images/right.png')} />
         </View>
         <View style={styles.booking}>
           <Text style={styles.textBooking}>My Booking</Text>
           <Image style={styles.imgRight}
-            source={require('../../../../../../assets/images/right.png')} />
+            source={require('../../assets/images/right.png')} />
         </View>
         <View style={styles.booking}>
           <View style={styles.content}>
             <Image style={styles.imgOption}
-              source={require('../../../../../../assets/images/payment.png')} />
+              source={require('../../assets/images/payment.png')} />
             <Text style={styles.textOption}>Payment</Text>
           </View>
           <Image style={styles.imgRight}
-            source={require('../../../../../../assets/images/right.png')} />
+            source={require('../../assets/images/right.png')} />
         </View>
         <View style={styles.booking}>
           <View style={styles.content}>
             <Image style={styles.imgOption}
-              source={require('../../../../../../assets/images/bellBlue.png')} />
+              source={require('../../assets/images/bellBlue.png')} />
             <Text style={styles.textOption}>Notification</Text>
           </View>
           <Image style={styles.imgRight}
-            source={require('../../../../../../assets/images/right.png')} />
+            source={require('../../assets/images/right.png')} />
         </View>
         <View style={styles.booking}>
           <View style={styles.content}>
             <Image style={styles.imgOption}
-              source={require('../../../../../../assets/images/security.png')} />
+              source={require('../../assets/images/security.png')} />
             <Text style={styles.textOption}>Security</Text>
           </View>
           <Image style={styles.imgRight}
-            source={require('../../../../../../assets/images/right.png')} />
+            source={require('../../assets/images/right.png')} />
         </View>
           <View style={styles.booking}>
           <View style={styles.content}>
             <Image style={styles.imgOption}
-              source={require('../../../../../../assets/images/language.png')} />
+              source={require('../../assets/images/language.png')} />
             <Text style={styles.textOption}>Language</Text>
           </View>
           <Image style={styles.imgRight}
-            source={require('../../../../../../assets/images/right.png')} />
+            source={require('../../assets/images/right.png')} />
         </View>
         <View style={styles.booking}>
           <View style={styles.content}>
             <Image style={styles.imgOption}
-              source={require('../../../../../../assets/images/help.png')} />
+              source={require('../../assets/images/help.png')} />
             <Text style={styles.textOption}>Help Center</Text>
           </View>
           <Image style={styles.imgRight}
-            source={require('../../../../../../assets/images/right.png')} />
+            source={require('../../assets/images/right.png')} />
         </View>
         <View style={styles.booking}>
           <View style={styles.content}>
             <Image style={styles.imgOption}
-              source={require('../../../../../../assets/images/logout.png')} />
+              source={require('../../assets/images/logout.png')} />
             <Text style={styles.textOption}>Log out</Text>
           </View>
           <Image style={styles.imgRight}
-            source={require('../../../../../../assets/images/right.png')} />
+            source={require('../../assets/images/right.png')} />
         </View>
       </View>
     </View>

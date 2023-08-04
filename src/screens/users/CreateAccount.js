@@ -1,7 +1,10 @@
 import { StyleSheet, Text, View, Pressable, TextInput, Image } from 'react-native'
 import React from 'react'
 import color from '../../assets/colors/color'
-const CreateAccount = () => {
+const CreateAccount = (props) => {
+
+   const {navigation} = props;
+
    return (
       <View style={styles.container}>
          <Text style={styles.textCreate}>Create an account</Text>
@@ -19,13 +22,14 @@ const CreateAccount = () => {
             <Image style={styles.iconEye} source={require('../../assets/images/eye.png')} />
          </Pressable>
          <Text style={styles.textForgot}>Forgot passsword?</Text>
-         <Pressable style={styles.btnSignIn}>
+         <Pressable style={styles.btnSignIn}
+         onPress={()=> navigation.navigate('Login')}>
             <Text style={styles.textSignIn}>Sign In</Text>
          </Pressable>
          <Text style={styles.textOr}>Or</Text>
 
          <Pressable style={styles.button} >
-                <Image style={styles.fbgg} source={require('../../assets/images/google.pngg')} />
+                <Image style={styles.fbgg} source={require('../../assets/images/google.png')} />
                 <Text style={{ fontSize: 16, fontWeight: 'bold', color: 'black' }}>Sign In With Google</Text>
             </Pressable>
             
@@ -45,7 +49,7 @@ const styles = StyleSheet.create({
       height: 56,
       width: '100%',
       borderColor: color.textHint,
-      borderRadius: 20,
+      borderRadius: 16,
       marginBottom: 20,
       alignItems: 'center',
       flexDirection: 'row'
@@ -90,7 +94,6 @@ const styles = StyleSheet.create({
       right: 32,
    },
    icon: {
-
       position: 'absolute',
       top: 20,
       left: 16,
@@ -101,21 +104,21 @@ const styles = StyleSheet.create({
       width: '100%',
       height: 56,
       borderRadius: 16,
-      borderColor: color.background,
+      borderColor: color.primaryColor,
       borderWidth: 1,
       backgroundColor: color.colorView,
       paddingLeft: 48,
       position: 'relative',
       fontSize: 16,
-      fontWeight: '500',
-      marginBottom: 32,
+      fontWeight: '700',
+      marginBottom: 16,
    },
    textCreate: {
       fontSize: 24,
       fontWeight: '500',
       color: color.black,
-      marginTop: 16,
-      marginBottom: 36,
+      marginTop: 48,
+      marginBottom: 48,
    },
    container: {
       flex: 1,

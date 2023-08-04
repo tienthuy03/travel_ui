@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Pressable } from 'react-native'
 import React from 'react'
-import color from '../../../../contains/color'
+import color from '../../assets/colors'
 
 const SuccessPayment = () => {
   return (

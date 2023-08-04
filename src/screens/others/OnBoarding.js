@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Image, Pressable } from 'react-native'
 import React from 'react'
-import color from '../../../../contains/color';
+import color from '../../assets/colors';
 
 const OnBoarding = (props) => {
 
@@ -9,9 +9,9 @@ const OnBoarding = (props) => {
     <View style={styles.container}>
       <View style={styles.Image}>
         <Image style={styles.imgBrLeft}
-          source={require('../../../../../../assets/images/imgLeft.png')} />
+          source={require('../../assets/images/imgLeft.png')} />
         <Image style={styles.imgBrRight}
-          source={require('../../../../../../assets/images/imgRight.png')} />
+          source={require('../../assets/images/imgRight.png')} />
       </View>
 
       <View style={styles.textHeader}>
@@ -26,7 +26,7 @@ const OnBoarding = (props) => {
         </View>
         <View style={styles.imgPlane}>
           <Image style={styles.icPlane}
-            source={require('../../../../../../assets/images/plane.png')} />
+            source={require('../../assets/images/plane.png')} />
         </View>
 
       </Pressable>
